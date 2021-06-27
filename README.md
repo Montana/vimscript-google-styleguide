@@ -23,13 +23,13 @@ You need not go out of your way to remove it. Trailing whitespace is allowed in 
 * Indent continued lines by four spaces
 * Do not align arguments of commands
   
-Not Google styleguide:
+Without Google styleguide:
 
 ```vim
 command -bang MyCommand  call myplugin#foo()
 command       MyCommand2 call myplugin#bar()
 ```
-Google styleguide: 
+With Google styleguide: 
 
 ```vim
 command -bang MyCommand call myplugin#foo()
