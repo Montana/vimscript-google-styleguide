@@ -71,7 +71,7 @@ Non-library plugins should expose commands instead of functions. Command logic s
 `[abort]` forces the function to halt when it encounters an error.
 
 
-## Prefix all variables with their scope:
+## Prefix all variables with their scope
 
 `g:`, `s:`, and `a:` must always be used.
 
