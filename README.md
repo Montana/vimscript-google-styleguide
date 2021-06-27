@@ -71,4 +71,14 @@ Non-library plugins should expose commands instead of functions. Command logic s
 `[abort]` forces the function to halt when it encounters an error.
 
 
+## Prefix all variables with their scope:
+
+`g:`, `s:`, and `a:` must always be used.
+
+`b:` changes the variable semantics; use it when you want buffer-local semantics.
+
+`l:` and `v:` should be used for consistency, future proofing, and to avoid subtle bugs. They are not strictly required. Add them in new code but don’t go out of your way to add them elsewhere.
+
+
+
 
