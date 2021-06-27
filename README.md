@@ -79,6 +79,15 @@ Non-library plugins should expose commands instead of functions. Command logic s
 
 `l:` and `v:` should be used for consistency, future proofing, and to avoid subtle bugs. They are not strictly required. Add them in new code but don’t go out of your way to add them elsewhere.
 
+## Regex 
+
+Prefix all regexes with `\m\C`.
+
+In addition to the case sensitivity settings, regex behavior depends upon the user's nomagic setting. To make regexes act like nomagic and noignorecase are set, prepend all regexes with `\m\C`.
+
+You are welcome to use other magic levels `(\v)` and case sensitivities `(\c)` so long as they are intentional and explicit.
+
+
 
 
 
