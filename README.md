@@ -56,5 +56,19 @@ Check variable types explicitly before using them. Use functions from `maktaba#e
 
 Use `:unlet` for variables that may change types, particularly those assigned inside loops.
 
+## Functions 
+
+In the autoload/ directory, defined with `[!]` and `[abort]`.
+
+Autoloading allows functions to be loaded on demand, which makes startuptime faster and enforces function namespacing.
+
+`Script-local` functions are welcome, but should also live in autoload/ and be called by autoloaded functions.
+
+Non-library plugins should expose commands instead of functions. Command logic should be extracted into functions and autoloaded.
+
+`[!]` allows developers to reload their functions without complaint.
+
+`[abort]` forces the function to halt when it encounters an error.
+
 
 
